@@ -5,8 +5,8 @@ class NetworkSettings {
   static const String _dandanplayServerKey = 'dandanplay_server_url';
   
   // 服务器常量
-  static const String primaryServer = 'https://api.dandanplay.net';
-  static const String backupServer = 'http://139.217.235.62:16001';
+  static const String primaryServer = 'https://danmuapi.zheng404.top/Zheng404';
+  static const String backupServer = 'http://58.87.88.35:9321/Zheng404';
   
   // 默认服务器（主服务器）
   static const String defaultServer = primaryServer;
@@ -41,12 +41,12 @@ class NetworkSettings {
       {
         'name': '主服务器',
         'url': primaryServer,
-        'description': 'api.dandanplay.net（官方服务器）',
+        'description': 'danmuapi.zheng404.top/Zheng404（官方服务器）',
       },
       {
         'name': '备用服务器', 
         'url': backupServer,
-        'description': '139.217.235.62:16001（镜像服务器）',
+        'description': '58.87.88.35:9321/Zheng404（镜像服务器）',
       },
     ];
   }

@@ -8,7 +8,7 @@ import './dandanplay_service.dart';
 
 class BangumiService {
   static final BangumiService instance = BangumiService._();
-  static const String _dandanplayBaseUrl = 'https://api.dandanplay.net/api/v2';
+  static const String _dandanplayBaseUrl = 'https://danmuapi.zheng404.top/Zheng404/api/v2';
   static const String _shinBangumiUrl = '$_dandanplayBaseUrl/bangumi/shin';
   static const String _bangumiDetailUrl = '$_dandanplayBaseUrl/bangumi/';
 

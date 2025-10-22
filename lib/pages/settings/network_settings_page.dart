@@ -166,7 +166,7 @@ class _NetworkSettingsPageState extends State<NetworkSettingsPage> {
                   ),
                   SizedBox(height: 8),
                   Text(
-                    '• 主服务器：api.dandanplay.net（官方服务器，推荐使用）',
+                    '• 主服务器：danmuapi.zheng404.top/Zheng404（官方服务器，推荐使用）',
                     style: TextStyle(
                       color: Colors.white70,
                       fontSize: 12,
@@ -174,7 +174,7 @@ class _NetworkSettingsPageState extends State<NetworkSettingsPage> {
                   ),
                   SizedBox(height: 4),
                   Text(
-                    '• 备用服务器：139.217.235.62:16001（镜像服务器，主服务器无法访问时使用）',
+                    '• 备用服务器：58.87.88.35:9321/Zheng404（镜像服务器，主服务器无法访问时使用）',
                     style: TextStyle(
                       color: Colors.white70,
                       fontSize: 12,

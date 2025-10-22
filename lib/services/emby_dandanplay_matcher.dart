@@ -588,7 +588,7 @@ class EmbyDandanplayMatcher {
       
       debugPrint('发送匹配请求到弹弹play API');
       final response = await http.post(
-        Uri.parse('https://api.dandanplay.net/api/v2/match'),
+        Uri.parse('https://danmuapi.zheng404.top/Zheng404/api/v2/match'),
         headers: headers,
         body: body,
       );
@@ -646,7 +646,7 @@ class EmbyDandanplayMatcher {
       final timestamp = (DateTime.now().toUtc().millisecondsSinceEpoch / 1000).round();
       const apiPath = '/api/v2/search/anime';
       
-      final url = 'https://api.dandanplay.net/api/v2/search/anime?keyword=${Uri.encodeComponent(cleanedKeyword)}';
+      final url = 'https://danmuapi.zheng404.top/Zheng404/api/v2/search/anime?keyword=${Uri.encodeComponent(cleanedKeyword)}';
       debugPrint('请求URL: $url');
       
       final uri = Uri.parse(url);
@@ -723,7 +723,7 @@ class EmbyDandanplayMatcher {
       final timestamp = (DateTime.now().toUtc().millisecondsSinceEpoch / 1000).round();
       final apiPath = '/api/v2/bangumi/$animeId';
       
-      final uri = Uri.parse('https://api.dandanplay.net$apiPath');
+      final uri = Uri.parse('https://danmuapi.zheng404.top/Zheng404$apiPath');
       
       final headers = {
         'Accept': 'application/json',

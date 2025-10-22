@@ -632,7 +632,7 @@ class JellyfinDandanplayMatcher {
       
       debugPrint('发送匹配请求到弹弹play API');
       final response = await http.post(
-        Uri.parse('https://api.dandanplay.net/api/v2/match'),
+        Uri.parse('https://danmuapi.zheng404.top/Zheng404/api/v2/match'),
         headers: headers,
         body: body,
       );
@@ -675,7 +675,7 @@ class JellyfinDandanplayMatcher {
       final timestamp = (DateTime.now().toUtc().millisecondsSinceEpoch / 1000).round();
       const apiPath = '/api/v2/search/anime';
       
-      final url = 'https://api.dandanplay.net/api/v2/search/anime?keyword=${Uri.encodeComponent(title)}';
+      final url = 'https://danmuapi.zheng404.top/Zheng404/api/v2/search/anime?keyword=${Uri.encodeComponent(title)}';
       debugPrint('请求URL: $url');
       
       final response = await http.get(
@@ -769,7 +769,7 @@ class JellyfinDandanplayMatcher {
       final timestamp = (DateTime.now().toUtc().millisecondsSinceEpoch / 1000).round();
       const apiPath = '/api/v2/search/episodes';
       
-      final url = 'https://api.dandanplay.net/api/v2/search/episodes?anime=${Uri.encodeComponent(animeTitle)}';
+      final url = 'https://danmuapi.zheng404.top/Zheng404/api/v2/search/episodes?anime=${Uri.encodeComponent(animeTitle)}';
       debugPrint('请求URL (使用标题搜索剧集): $url');
       
       final response = await http.get(

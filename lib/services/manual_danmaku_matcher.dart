@@ -25,7 +25,7 @@ class ManualDanmakuMatcher {
       final timestamp = (DateTime.now().toUtc().millisecondsSinceEpoch / 1000).round();
       const apiPath = '/api/v2/search/anime';
       
-      final url = 'https://api.dandanplay.net/api/v2/search/anime?keyword=${Uri.encodeComponent(keyword)}';
+      final url = 'https://danmuapi.zheng404.top/Zheng404/api/v2/search/anime?keyword=${Uri.encodeComponent(keyword)}';
       
       final response = await http.get(
         Uri.parse(url),
@@ -66,7 +66,7 @@ class ManualDanmakuMatcher {
       final timestamp = (DateTime.now().toUtc().millisecondsSinceEpoch / 1000).round();
       final apiPath = '/api/v2/bangumi/$animeId';
       
-      final url = 'https://api.dandanplay.net/api/v2/bangumi/$animeId';
+      final url = 'https://danmuapi.zheng404.top/Zheng404/api/v2/bangumi/$animeId';
       
       final response = await http.get(
         Uri.parse(url),

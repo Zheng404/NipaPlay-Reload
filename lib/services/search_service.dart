@@ -8,7 +8,7 @@ import './dandanplay_service.dart';
 
 class SearchService {
   static final SearchService instance = SearchService._();
-  static const String _baseUrl = 'https://api.dandanplay.net/api/v2';
+  static const String _baseUrl = 'https://danmuapi.zheng404.top/Zheng404/api/v2';
   static const String _configCacheKey = 'search_config_cache';
   static const Duration _configCacheDuration = Duration(days: 1);
 

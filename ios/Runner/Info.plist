@@ -63,7 +63,7 @@
 				<key>NSTemporaryExceptionRequiresForwardSecrecy</key>
 				<false/>
 			</dict>
-			<key>api.dandanplay.net</key>
+			<key>danmuapi.zheng404.top/Zheng404</key>
 			<dict>
 				<key>NSIncludesSubdomains</key>
 				<true/>

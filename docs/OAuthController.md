@@ -4,7 +4,7 @@
 
 ## 基础信息
 
-**Base URL**: `https://api.dandanplay.net`
+**Base URL**: `https://danmuapi.zheng404.top/Zheng404`
 
 **授权流程**: OAuth 2.0 Authorization Code Flow（支持 PKCE）
 
@@ -38,7 +38,7 @@ GET /api/v2/oauth/login
 **Query 参数**:
 
 ```
-https://api.dandanplay.net/api/v2/oauth/login?
+https://danmuapi.zheng404.top/Zheng404/api/v2/oauth/login?
   client_id={your_client_id}&
   redirect_uri={your_redirect_uri}&
   response_type=code&
@@ -48,15 +48,15 @@ https://api.dandanplay.net/api/v2/oauth/login?
   code_challenge_method=S256             // PKCE (可选)
 ```
 
-| 参数 | 必填 | 说明 |
-|------|------|------|
-| `client_id` | 是 | 你的应用 ID |
-| `redirect_uri` | 是 | 授权完成后的回调地址，必须与注册时一致 |
-| `response_type` | 是 | 固定值 `code` |
-| `scope` | 是 | 请求的权限范围，多个用空格分隔 |
-| `state` | 推荐 | 随机字符串，用于防止 CSRF 攻击 |
-| `code_challenge` | 可选 | PKCE 质询码（推荐公有客户端使用） |
-| `code_challenge_method` | 可选 | 质询方法，固定值 `S256` |
+| 参数                    | 必填 | 说明                                   |
+| ----------------------- | ---- | -------------------------------------- |
+| `client_id`             | 是   | 你的应用 ID                            |
+| `redirect_uri`          | 是   | 授权完成后的回调地址，必须与注册时一致 |
+| `response_type`         | 是   | 固定值 `code`                          |
+| `scope`                 | 是   | 请求的权限范围，多个用空格分隔         |
+| `state`                 | 推荐 | 随机字符串，用于防止 CSRF 攻击         |
+| `code_challenge`        | 可选 | PKCE 质询码（推荐公有客户端使用）      |
+| `code_challenge_method` | 可选 | 质询方法，固定值 `S256`                |
 
 **PKCE 说明**（推荐移动端和前端应用使用）：
 
@@ -239,9 +239,9 @@ Authorization: Bearer {your_access_token}
 
 **Query 参数**:
 
-| 参数 | 必填 | 说明 |
-|------|------|------|
-| `business` | 是 | 业务标识，如 `deleteAccount` |
+| 参数       | 必填 | 说明                         |
+| ---------- | ---- | ---------------------------- |
+| `business` | 是   | 业务标识，如 `deleteAccount` |
 
 **成功响应** (200):
 
@@ -266,7 +266,7 @@ Authorization: Bearer {your_access_token}
 生成 WebToken 后，可以将用户重定向到特定业务页面：
 
 ```
-https://api.dandanplay.net/api/v2/oauth/deleteAccount?webToken={web_token}
+https://danmuapi.zheng404.top/Zheng404/api/v2/oauth/deleteAccount?webToken={web_token}
 ```
 
 ---
